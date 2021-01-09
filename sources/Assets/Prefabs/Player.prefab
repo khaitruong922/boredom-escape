@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6797382781609056531}
   - component: {fileID: 6797382781609056530}
   - component: {fileID: 2022387608}
+  - component: {fileID: 449501567}
+  - component: {fileID: 8696781869297187359}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -132,3 +134,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
+--- !u!114 &449501567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797382781609056541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e0214d384ab3c4c9b3c71390c53d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8696781869297187359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797382781609056541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304d082d45229ec42ac2e99f69e1fd5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+  drainRate: 2

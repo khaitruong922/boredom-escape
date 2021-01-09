@@ -13,18 +13,17 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         Player player = Player.Instance;
-        if (player != null)
-        {
-            health = player.GetComponent<Health>();
-            health.OnHealthChanged += UpdateHealthBar;
-        }
+        print(player);
+        if (player == null) return;
+        health = player.GetComponent<Health>();
+        print(health);
+        health.OnHealthChanged += UpdateHealthBar;
     }
     private void UpdateHealthBar()
     {
-        if (health != null)
-        {
-            healthBar.fillAmount = health.Percentage;
-        }
+        if (health == null) return;
+        healthBar.fillAmount = health.Percentage;
+
     }
 }
 
