@@ -4,19 +4,28 @@ using UnityEngine;
 
 public class TaskReceiver : MonoBehaviour
 {
-    private Task triggeredTask = null;
+    private TaskGiver currentTaskGiver = null;
+    public bool HasAction()
+    {
+        if (currentTaskGiver == null) return false;
+        return currentTaskGiver.HasAction;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         TaskGiver taskGiver = other.GetComponent<TaskGiver>();
         if (taskGiver == null) return;
-        triggeredTask = taskGiver.Task;
-        print(triggeredTask);
+        currentTaskGiver = taskGiver;
+        print(currentTaskGiver);
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         TaskGiver taskGiver = other.GetComponent<TaskGiver>();
         if (taskGiver == null) return;
-        triggeredTask = null;
-        print(triggeredTask);
+        currentTaskGiver = null;
+        print(currentTaskGiver);
+    }
+    public void HandleAction()
+    {
+        currentTaskGiver.HandleAction();
     }
 }
