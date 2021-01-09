@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Health), typeof(Energy))]
+[RequireComponent(typeof(Health), typeof(Energy), typeof(Score))]
 public class TaskReceiver : MonoBehaviour
 {
     private Health health;
     private Energy energy;
+    private Score score;
     private void Awake()
     {
         health = GetComponent<Health>();
         energy = GetComponent<Energy>();
+        score = GetComponent<Score>();
     }
     private TaskGiver currentTaskGiver = null;
     public TaskGiver CurrentTaskGiver => currentTaskGiver;
@@ -45,5 +47,6 @@ public class TaskReceiver : MonoBehaviour
     {
         health.ModifyHP(task.health);
         energy.ModifyEnergy(task.energy);
+        score.AddScore(task.score);
     }
 }
