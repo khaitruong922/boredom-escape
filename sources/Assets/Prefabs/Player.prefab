@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 449501567}
   - component: {fileID: 8696781869297187359}
   - component: {fileID: 7164078542148641569}
+  - component: {fileID: 931147723978104337}
+  - component: {fileID: 5058384033865360468}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -176,3 +178,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxEnergy: 100
   drainRate: 2
+--- !u!114 &931147723978104337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797382781609056541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a57463d26d010242b161fbff04624ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &5058384033865360468
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797382781609056541}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.625
