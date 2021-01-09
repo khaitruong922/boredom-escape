@@ -10,7 +10,7 @@ public enum TaskState
 }
 public class TaskGiver : MonoBehaviour
 {
-    public static Action OnTaskStart { get; set; }
+    public static Action<Task> OnTaskStart { get; set; }
     public static Action<float> OnTaskProgress { get; set; }
     public static Action OnTaskEnd { get; set; }
     public static Action<Task> OnTaskFinished { get; set; }
@@ -51,7 +51,7 @@ public class TaskGiver : MonoBehaviour
     {
         if (taskState == TaskState.Ready)
         {
-            OnTaskStart?.Invoke();
+            OnTaskStart?.Invoke(task);
             taskState = TaskState.InProgress;
             return;
         }

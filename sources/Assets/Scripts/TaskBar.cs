@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class TaskBar : MonoBehaviour
 {
     [SerializeField]
     private GameObject barContainer;
     [SerializeField]
     private Image taskBar;
+    [SerializeField]
+    private TextMeshProUGUI taskText;
     private void Start()
     {
         TaskGiver.OnTaskStart += ShowBar;
@@ -22,8 +25,9 @@ public class TaskBar : MonoBehaviour
     {
         barContainer.SetActive(false);
     }
-    private void ShowBar()
+    private void ShowBar(Task task)
     {
+        taskText.text = task.title;
         barContainer.SetActive(true);
     }
 }
