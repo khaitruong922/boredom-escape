@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0daa79b660a17d40bda863bec0d0f19, type: 3}
   m_Name: Eating
   m_EditorClassIdentifier: 
-  title: 
-  description: 
-  cooldown: 0
-  duration: 0
-  energy: 0
-  health: 0
+  title: Time to eat!
+  description: You are starving. How about we take a break and have some good ol'
+    meal?
+  cooldown: 20
+  duration: 5
+  energy: 20
+  health: 20
