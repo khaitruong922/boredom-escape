@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 public enum TaskState
 {
     Ready,
@@ -9,6 +10,9 @@ public enum TaskState
 }
 public class TaskGiver : MonoBehaviour
 {
+    public static Action OnTaskStart { get; set; }
+    public static Action<float> OnTaskProgress { get; set; }
+    public static Action OnTaskEnd { get; set; }
     [SerializeField]
     private Task task;
     public Task Task => task;
@@ -28,9 +32,11 @@ public class TaskGiver : MonoBehaviour
             if (taskReceiver.CurrentTaskGiver != this)
             {
                 ResetTask();
+                OnTaskEnd?.Invoke();
                 return;
             }
             TickDuration();
+            OnTaskProgress?.Invoke(1 - timeToFinish / task.duration);
             return;
         }
         if (taskState == TaskState.OnCooldown)
@@ -44,6 +50,7 @@ public class TaskGiver : MonoBehaviour
     {
         if (taskState == TaskState.Ready)
         {
+            OnTaskStart?.Invoke();
             taskState = TaskState.InProgress;
             return;
         }
@@ -62,6 +69,7 @@ public class TaskGiver : MonoBehaviour
         {
             // Give reward
             taskReceiver.ReceiveTaskRewards(task);
+            OnTaskEnd?.Invoke();
             taskState = TaskState.OnCooldown;
         }
     }
