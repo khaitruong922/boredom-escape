@@ -2,23 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName ="Task")]
+[CreateAssetMenu(menuName = "Task")]
 public class Task : ScriptableObject
 {
-
-    
     public string title;
-   
     public string description;
-    
     public float cooldown;
-    
     public float duration;
-
     public float energy;
-
     public float health;
-
-
-
 }
