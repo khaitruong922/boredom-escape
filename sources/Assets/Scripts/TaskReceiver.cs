@@ -33,6 +33,10 @@ public class TaskReceiver : MonoBehaviour
         currentTaskGiver = null;
         print(currentTaskGiver);
     }
+    private void Start()
+    {
+        TaskGiver.OnTaskFinished += ReceiveTaskRewards;
+    }
     public void HandleAction()
     {
         currentTaskGiver.HandleAction();

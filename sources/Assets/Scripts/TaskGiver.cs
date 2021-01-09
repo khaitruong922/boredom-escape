@@ -13,6 +13,7 @@ public class TaskGiver : MonoBehaviour
     public static Action OnTaskStart { get; set; }
     public static Action<float> OnTaskProgress { get; set; }
     public static Action OnTaskEnd { get; set; }
+    public static Action<Task> OnTaskFinished { get; set; }
     [SerializeField]
     private Task task;
     public Task Task => task;
@@ -68,7 +69,7 @@ public class TaskGiver : MonoBehaviour
         if (timeToFinish <= 0)
         {
             // Give reward
-            taskReceiver.ReceiveTaskRewards(task);
+            OnTaskFinished?.Invoke(task);
             OnTaskEnd?.Invoke();
             taskState = TaskState.OnCooldown;
         }
