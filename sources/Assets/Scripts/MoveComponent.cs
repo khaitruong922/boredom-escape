@@ -5,7 +5,9 @@ using UnityEngine;
 public class MoveComponent : MonoBehaviour
 {
     [SerializeField]
-    private float baseSpeed = 5f;
+    private float baseSpeed = 2f;
+    [SerializeField]
+    private float scaleSpeed = 8f;
     private float multiplier = 1f;
     public float Multiplier { get => multiplier; set => multiplier = value; }
     private Rigidbody2D rb;
@@ -15,7 +17,7 @@ public class MoveComponent : MonoBehaviour
     }
     public void Move(Vector2 direction)
     {
-        rb.velocity = direction * baseSpeed * multiplier;
+        rb.velocity = direction * (baseSpeed + scaleSpeed * multiplier);
     }
 }
 

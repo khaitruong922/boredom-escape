@@ -13,10 +13,8 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         Player player = Player.Instance;
-        print(player);
         if (player == null) return;
         health = player.GetComponent<Health>();
-        print(health);
         health.OnHealthChanged += UpdateHealthBar;
     }
     private void UpdateHealthBar()
