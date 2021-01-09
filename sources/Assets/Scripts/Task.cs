@@ -6,6 +6,7 @@ using UnityEngine;
 public class Task : ScriptableObject
 {
     public string title;
+    [TextArea(3,5)]
     public string description;
     public float cooldown;
     public float duration;
