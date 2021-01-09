@@ -17,8 +17,8 @@ public class TaskView : MonoBehaviour
         cooldownText.text = task.cooldown.ToString();
         cooldownText.text = task.energy.ToString();
         energyText.text = task.health.ToString();
-        pointText.text = task.point.ToString();
-        finishedText.text = task.finished;
+        // pointText.text = task.point.ToString();
+        // finishedText.text = task.finished;
 
 
     }

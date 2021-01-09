@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class TaskButton : MonoBehaviour
 {
     [SerializeField]
-    private TaskController taskController;
+    private TaskView taskView;
     private Image taskButtonImage;
     private TaskReceiver taskReceiver;
     private bool hasAction;
@@ -27,7 +27,7 @@ public class TaskButton : MonoBehaviour
     }
     public void DisplayTask()
     {
-        taskController.DisplayTask(taskReceiver.CurrentTaskGiver.Task);
+        taskView.DisplayTask(taskReceiver.CurrentTaskGiver.Task);
     }
     public void HandleAction()
     {
