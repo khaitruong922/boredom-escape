@@ -279,10 +279,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4795584133621947670, guid: d1569aa0ce7dd5c438299d23d1ecbc3e, type: 3}
-      propertyPath: m_text
-      value: The Home Run
-      objectReference: {fileID: 0}
     - target: {fileID: 4795584133996975425, guid: d1569aa0ce7dd5c438299d23d1ecbc3e, type: 3}
       propertyPath: m_Pivot.x
       value: 0

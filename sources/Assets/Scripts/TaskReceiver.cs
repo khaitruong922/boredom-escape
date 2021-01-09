@@ -10,11 +10,13 @@ public class TaskReceiver : MonoBehaviour
         TaskGiver taskGiver = other.GetComponent<TaskGiver>();
         if (taskGiver == null) return;
         triggeredTask = taskGiver.Task;
+        print(triggeredTask);
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         TaskGiver taskGiver = other.GetComponent<TaskGiver>();
         if (taskGiver == null) return;
         triggeredTask = null;
+        print(triggeredTask);
     }
 }
