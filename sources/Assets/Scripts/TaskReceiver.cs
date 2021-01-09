@@ -2,9 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Health), typeof(Energy))]
 public class TaskReceiver : MonoBehaviour
 {
+    private Health health;
+    private Energy energy;
+    private void Awake()
+    {
+        health = GetComponent<Health>();
+        energy = GetComponent<Energy>();
+    }
     private TaskGiver currentTaskGiver = null;
+    public TaskGiver CurrentTaskGiver => currentTaskGiver;
     public bool HasAction()
     {
         if (currentTaskGiver == null) return false;
@@ -27,5 +36,10 @@ public class TaskReceiver : MonoBehaviour
     public void HandleAction()
     {
         currentTaskGiver.HandleAction();
+    }
+    public void ReceiveTaskRewards(Task task)
+    {
+        health.ModifyHP(task.health);
+        energy.ModifyEnergy(task.energy);
     }
 }

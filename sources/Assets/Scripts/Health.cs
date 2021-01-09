@@ -18,21 +18,15 @@ public class Health : MonoBehaviour
     }
     private void Update()
     {
-        TakeDamage(drainRate*Time.deltaTime);
+        ModifyHP(-drainRate * Time.deltaTime);
         if (currentHP <= 0)
         {
             Die();
         }
     }
-    public void TakeDamage(float damage)
+    public void ModifyHP(float amount)
     {
-        currentHP -= damage;
-        ClampHP();
-        OnHealthChanged?.Invoke();
-    }
-    public void Heal(float healAmount)
-    {
-        currentHP += healAmount;
+        currentHP += amount;
         ClampHP();
         OnHealthChanged?.Invoke();
     }

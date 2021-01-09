@@ -20,16 +20,10 @@ public class Energy : MonoBehaviour
     }
     private void Update()
     {
-        Drain(drainRate * Time.deltaTime);
+        ModifyEnergy(-drainRate * Time.deltaTime);
         moveComponent.Multiplier = Percentage;
     }
-    public void Drain(float amount)
-    {
-        currentEnergy -= amount;
-        ClampEnergy();
-        OnEnergyChanged?.Invoke();
-    }
-    public void Recharge(float amount)
+    public void ModifyEnergy(float amount)
     {
         currentEnergy += amount;
         ClampEnergy();

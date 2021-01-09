@@ -8,7 +8,7 @@ public class TaskView : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI titleText, descriptionText, durationText, cooldownText, energyText, healthText;
-    
+
     public void DisplayTask(Task task)
     {
         titleText.text = task.title;

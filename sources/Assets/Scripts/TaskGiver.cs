@@ -5,7 +5,6 @@ public enum TaskState
 {
     Ready,
     InProgress,
-    Finish,
     OnCooldown
 }
 public class TaskGiver : MonoBehaviour
@@ -14,16 +13,23 @@ public class TaskGiver : MonoBehaviour
     private Task task;
     public Task Task => task;
     private TaskState taskState = TaskState.Ready;
+    private TaskReceiver taskReceiver;
     private float timeToFinish;
     private float cooldownLeft;
     private void Start()
     {
+        taskReceiver = Player.Instance.GetComponent<TaskReceiver>();
         ResetTask();
     }
     private void Update()
     {
         if (taskState == TaskState.InProgress)
         {
+            if (taskReceiver.CurrentTaskGiver != this)
+            {
+                ResetTask();
+                return;
+            }
             TickDuration();
             return;
         }
@@ -33,7 +39,7 @@ public class TaskGiver : MonoBehaviour
             return;
         }
     }
-    public bool HasAction => taskState == TaskState.Ready || taskState == TaskState.Finish;
+    public bool HasAction => taskState == TaskState.Ready;
     public void HandleAction()
     {
         if (taskState == TaskState.Ready)
@@ -41,14 +47,10 @@ public class TaskGiver : MonoBehaviour
             taskState = TaskState.InProgress;
             return;
         }
-        if (taskState == TaskState.Finish)
-        {
-            taskState = TaskState.OnCooldown;
-            return;
-        }
     }
     private void ResetTask()
     {
+        print("Task reset");
         taskState = TaskState.Ready;
         timeToFinish = task.duration;
         cooldownLeft = task.cooldown;
@@ -58,7 +60,9 @@ public class TaskGiver : MonoBehaviour
         timeToFinish -= Time.deltaTime;
         if (timeToFinish <= 0)
         {
-            taskState = TaskState.Finish;
+            // Give reward
+            taskReceiver.ReceiveTaskRewards(task);
+            taskState = TaskState.OnCooldown;
         }
     }
     private void TickCooldown()

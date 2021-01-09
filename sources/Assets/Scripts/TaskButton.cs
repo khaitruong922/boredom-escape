@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class TaskButton : MonoBehaviour
 {
+    [SerializeField]
+    private TaskController taskController;
     private Image taskButtonImage;
     private TaskReceiver taskReceiver;
     private bool hasAction;
@@ -22,6 +24,10 @@ public class TaskButton : MonoBehaviour
             return;
         }
         taskButtonImage.enabled = false;
+    }
+    public void DisplayTask()
+    {
+        taskController.DisplayTask(taskReceiver.CurrentTaskGiver.Task);
     }
     public void HandleAction()
     {
