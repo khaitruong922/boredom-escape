@@ -6,12 +6,12 @@ public class TaskButton : MonoBehaviour
 {
     [SerializeField]
     private TaskView taskView;
-    private Image taskButtonImage;
+    [SerializeField]
+    private GameObject taskButton;
     private TaskReceiver taskReceiver;
     private bool hasAction;
     private void Start()
     {
-        taskButtonImage = GetComponent<Image>();
         taskReceiver = Player.Instance.GetComponent<TaskReceiver>();
     }
     private void Update()
@@ -20,10 +20,10 @@ public class TaskButton : MonoBehaviour
         hasAction = taskReceiver.HasAction();
         if (hasAction)
         {
-            taskButtonImage.enabled = true;
+            taskButton.SetActive(true);
             return;
         }
-        taskButtonImage.enabled = false;
+        taskButton.SetActive(false);
     }
     public void DisplayTask()
     {

@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -30, y: -30}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &88726122
 CanvasRenderer:
@@ -412,7 +412,6 @@ GameObject:
   - component: {fileID: 1131160411}
   - component: {fileID: 1131160410}
   - component: {fileID: 1131160409}
-  - component: {fileID: 1131160408}
   m_Layer: 5
   m_Name: TaskButton
   m_TagString: Untagged
@@ -521,7 +520,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1131160408}
+      - m_Target: {fileID: 54030767}
         m_TargetAssemblyTypeName: TaskButton, Assembly-CSharp
         m_MethodName: DisplayTask
         m_Mode: 1
@@ -545,19 +544,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &1131160408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1131160406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cf756ad64c476f4ca975313bf975837, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  taskView: {fileID: 4119845145992801916}
 --- !u!1 &1219765235
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +853,7 @@ GameObject:
   - component: {fileID: 763444720696647681}
   - component: {fileID: 499823108}
   - component: {fileID: 385259698}
+  - component: {fileID: 54030767}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1010,6 +997,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2026070215}
   highScoreText: {fileID: 172148388}
+--- !u!114 &54030767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763444720696647680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf756ad64c476f4ca975313bf975837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskView: {fileID: 4119845145992801916}
+  taskButton: {fileID: 1131160406}
 --- !u!1001 &763444720119696584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1379,7 +1380,7 @@ PrefabInstance:
     - target: {fileID: 3618417717473021722, guid: 0fa0a36db96f16f4293e3143497dd9aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1131160408}
+      objectReference: {fileID: 54030767}
     - target: {fileID: 7354818222702024528, guid: 0fa0a36db96f16f4293e3143497dd9aa, type: 3}
       propertyPath: m_Name
       value: TaskLayer
@@ -1621,14 +1622,14 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1061868254284643478, guid: e0e0e49713f8d5e4e98c745738f2564b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e0e0e49713f8d5e4e98c745738f2564b, type: 3}
---- !u!224 &24965525166125092 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6886796176126229262, guid: e0e0e49713f8d5e4e98c745738f2564b, type: 3}
-  m_PrefabInstance: {fileID: 6902437823294327594}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &24965524084862548 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6886796175062099326, guid: e0e0e49713f8d5e4e98c745738f2564b, type: 3}
+  m_PrefabInstance: {fileID: 6902437823294327594}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &24965525166125092 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6886796176126229262, guid: e0e0e49713f8d5e4e98c745738f2564b, type: 3}
   m_PrefabInstance: {fileID: 6902437823294327594}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7286571107759424448
