@@ -19,5 +19,4 @@ MonoBehaviour:
   duration: 5
   energy: -15
   health: -15
-  point: 150
-  finished: The baby is asleep, for now.
+  score: 10
