@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0daa79b660a17d40bda863bec0d0f19, type: 3}
-  m_Name: New Task 1
+  m_Name: Dishes
   m_EditorClassIdentifier: 
   title: 
   description: 
