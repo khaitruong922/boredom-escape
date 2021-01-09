@@ -15,7 +15,9 @@ MonoBehaviour:
   title: Babysit?
   description: Your child is whining again and it's stressing you out. Let's put
     him to bed.
-  cooldown: 5
-  duration: 4
+  cooldown: 30
+  duration: 10
   energy: -15
   health: -15
+  point: 150
+  finished: The baby is asleep, for now.

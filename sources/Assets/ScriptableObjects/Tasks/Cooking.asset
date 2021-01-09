@@ -18,3 +18,5 @@ MonoBehaviour:
   duration: 10
   energy: -10
   health: 5
+  point: 100
+  finished: Smells good!

@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Sleep
   m_EditorClassIdentifier: 
   title: Take a nap
-  description: All these chores were so exhausting. A good sleep sounds nice
+  description: All these chores are so exhausting. A good sleep sounds nice.
   cooldown: 40
   duration: 20
   energy: 25
-  health: -10
+  health: 0
+  point: 50
+  finished: The nap was very fulfilling.

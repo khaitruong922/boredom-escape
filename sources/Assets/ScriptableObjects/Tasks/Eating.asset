@@ -19,3 +19,5 @@ MonoBehaviour:
   duration: 5
   energy: 20
   health: 20
+  point: 150
+  finished: And now we're so full.

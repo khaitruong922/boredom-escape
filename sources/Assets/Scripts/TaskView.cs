@@ -7,7 +7,7 @@ using UnityEngine;
 public class TaskView : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI titleText, descriptionText, durationText, cooldownText, energyText, healthText;
+    private TextMeshProUGUI titleText, descriptionText, durationText, cooldownText, energyText, healthText, pointText, finishedText;
     
     public void DisplayTask(Task task)
     {
@@ -17,6 +17,9 @@ public class TaskView : MonoBehaviour
         cooldownText.text = task.cooldown.ToString();
         cooldownText.text = task.energy.ToString();
         energyText.text = task.health.ToString();
+        pointText.text = task.point.ToString();
+        finishedText.text = task.finished;
+
 
     }
 }
