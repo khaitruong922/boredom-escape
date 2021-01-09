@@ -12,4 +12,6 @@ public class Task : ScriptableObject
     public float duration;
     public float energy;
     public float health;
+    public float point;
+    public string finished;
 }

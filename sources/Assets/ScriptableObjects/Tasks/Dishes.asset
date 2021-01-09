@@ -15,7 +15,9 @@ MonoBehaviour:
   title: Wash them dishes!
   description: Your dishes are so dirty and messy. Be responsible and clean them
     up!
-  cooldown: 20
-  duration: 10
+  cooldown: 10
+  duration: 5
   energy: -10
   health: 5
+  point: 100
+  finished: All tidy and clean!
