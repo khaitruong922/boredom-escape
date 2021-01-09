@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0daa79b660a17d40bda863bec0d0f19, type: 3}
   m_Name: Cooking
   m_EditorClassIdentifier: 
-  title: 
-  description: 
-  cooldown: 0
-  duration: 0
-  energy: 0
-  health: 0
+  title: Prepare a meal
+  description: It's about time for lunch. Let's see if we can cook up something!
+  cooldown: 20
+  duration: 10
+  energy: -10
+  health: 5
