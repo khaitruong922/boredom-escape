@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Reading
   m_EditorClassIdentifier: 
   title: Read a book
-  description: 
+  description: Let's pick up where we left off from last time.
   cooldown: 0
   duration: 0
   energy: 0

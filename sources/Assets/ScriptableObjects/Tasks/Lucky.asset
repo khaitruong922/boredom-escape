@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0daa79b660a17d40bda863bec0d0f19, type: 3}
   m_Name: Lucky
   m_EditorClassIdentifier: 
-  title: 
-  description: 
-  cooldown: 0
-  duration: 0
+  title: 'Open the '
+  description: There's something glittering inside this chest. What could it be?
+  cooldown: 60
+  duration: 10
   energy: 0
   health: 0
-  score: 0
+  score: 200
