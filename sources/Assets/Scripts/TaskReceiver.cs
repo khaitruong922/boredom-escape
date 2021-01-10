@@ -5,11 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Health), typeof(Energy), typeof(Score))]
 public class TaskReceiver : MonoBehaviour
 {
+    private AudioSource audioSource;
     private Health health;
     private Energy energy;
     private Score score;
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         health = GetComponent<Health>();
         energy = GetComponent<Energy>();
         score = GetComponent<Score>();
@@ -27,6 +29,7 @@ public class TaskReceiver : MonoBehaviour
         if (taskGiver == null) return;
         currentTaskGiver = taskGiver;
         print(currentTaskGiver);
+        audioSource.Play();
     }
     private void OnTriggerExit2D(Collider2D other)
     {
