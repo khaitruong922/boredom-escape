@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Take a nap
   description: You are exhausted from doing these tasks. A good sleep sounds nice.
   cooldown: 20
-  duration: 7
+  duration: 6.5
   energy: 25
   health: 15
   score: 0

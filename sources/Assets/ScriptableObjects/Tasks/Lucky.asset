@@ -15,7 +15,7 @@ MonoBehaviour:
   title: 'Open the '
   description: There's something glittering inside this chest. What could it be?
   cooldown: 60
-  duration: 10
+  duration: 5
   energy: 0
   health: 0
   score: 200
