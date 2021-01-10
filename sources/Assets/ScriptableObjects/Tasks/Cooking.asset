@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Prepare a meal
   description: It's about time for lunch. Let's see if we can cook up something!
-  cooldown: 25
+  cooldown: 32.5
   duration: 6.5
   energy: -10
   health: 20

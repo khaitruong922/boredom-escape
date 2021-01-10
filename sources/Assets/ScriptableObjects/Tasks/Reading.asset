@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Read a book
   description: Let's pick up where we left off from last time.
-  cooldown: 25
+  cooldown: 30
   duration: 5
   energy: -6
   health: 20
