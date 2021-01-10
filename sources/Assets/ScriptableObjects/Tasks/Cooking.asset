@@ -17,5 +17,5 @@ MonoBehaviour:
   cooldown: 15
   duration: 5
   energy: -10
-  health: 5
+  health: 20
   score: 100
