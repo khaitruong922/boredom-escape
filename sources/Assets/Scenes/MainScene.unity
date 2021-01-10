@@ -245,6 +245,10 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 148208662}
+    - target: {fileID: 6797382781609056528, guid: 35eab584bc46b094fb16a6d88896e724, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e6cccdc537f4aca498ecd04d50bc5631, type: 3}
     - target: {fileID: 6797382781609056529, guid: 35eab584bc46b094fb16a6d88896e724, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -300,6 +304,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6797382781609056529, guid: 35eab584bc46b094fb16a6d88896e724, type: 3}
   m_PrefabInstance: {fileID: 425158215}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &447091842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6797382781609056541, guid: 35eab584bc46b094fb16a6d88896e724, type: 3}
+  m_PrefabInstance: {fileID: 425158215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &447091843
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447091842}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1056992685
 PrefabInstance:
   m_ObjectHideFlags: 0
