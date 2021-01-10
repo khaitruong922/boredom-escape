@@ -12,6 +12,7 @@ public class TaskGiver : MonoBehaviour
 {
     public static Action<Task> OnTaskStart { get; set; }
     public static Action<float> OnTaskProgress { get; set; }
+    public Action<float> OnTaskCooldown { get; set; }
     public static Action OnTaskEnd { get; set; }
     public static Action<Task> OnTaskFinished { get; set; }
     [SerializeField]
@@ -77,6 +78,7 @@ public class TaskGiver : MonoBehaviour
     private void TickCooldown()
     {
         cooldownLeft -= Time.deltaTime;
+        OnTaskCooldown?.Invoke(1 - cooldownLeft / task.cooldown);
         if (cooldownLeft <= 0)
         {
             taskState = TaskState.Ready;
