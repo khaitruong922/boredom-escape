@@ -1,8 +1,11 @@
 This is the game that we made for Gameloft Game Jam 2020 in 48 hours
 
 Platform: Android
+
 Theme: Life at Home
+
 Team: RDC Circus
+
 Game's name: Boredom Escape
 
 Contributors:
