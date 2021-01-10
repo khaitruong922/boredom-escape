@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Take a nap
   description: You are exhausted from doing these tasks. A good sleep sounds nice.
-  cooldown: 20
+  cooldown: 40
   duration: 6.5
   energy: 25
   health: 15
