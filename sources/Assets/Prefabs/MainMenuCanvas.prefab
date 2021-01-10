@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Home Run
+  m_text: Boredom Escape
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9e233efefce8a934e949bc0cf62229b4, type: 2}
   m_sharedMaterial: {fileID: 8461774367334493984, guid: 9e233efefce8a934e949bc0cf62229b4, type: 2}
