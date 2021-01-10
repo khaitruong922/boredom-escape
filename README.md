@@ -8,6 +8,9 @@ Team: RDC Circus
 
 Game's name: Boredom Escape
 
+Download link: https://drive.google.com/file/d/1JSQxdHxiQwoYimSyFG2ISd9sHSw7CgQv/view?usp=sharing
+
+
 Contributors:
 
 - Truong Duc Khai (khaitruong922)
