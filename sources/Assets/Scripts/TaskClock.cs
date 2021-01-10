@@ -19,4 +19,8 @@ public class TaskClock : MonoBehaviour
     {
         clockFill.fillAmount = amount;
     }
+    private void OnDestroy() {
+        taskGiver.OnTaskCooldown -= UpdateClock;
+        
+    }
 }

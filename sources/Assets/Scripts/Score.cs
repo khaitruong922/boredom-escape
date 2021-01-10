@@ -20,6 +20,7 @@ public class Score : MonoBehaviour
         OnScoreChanged?.Invoke(score);
     }
     public int HighScore => PlayerPrefs.GetInt(key, 0);
+    public int MyScore => score;
     public void SaveScore()
     {
         if (score > HighScore)

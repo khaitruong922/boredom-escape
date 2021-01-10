@@ -23,5 +23,9 @@ public class HealthBar : MonoBehaviour
         healthBar.fillAmount = health.Percentage;
 
     }
+    private void OnDestroy()
+    {
+        health.OnHealthChanged -= UpdateHealthBar;
+    }
 }
 

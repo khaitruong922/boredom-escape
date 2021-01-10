@@ -49,4 +49,8 @@ public class TaskReceiver : MonoBehaviour
         energy.ModifyEnergy(task.energy);
         score.AddScore(task.score);
     }
+    private void OnDestroy()
+    {
+        TaskGiver.OnTaskFinished -= ReceiveTaskRewards;
+    }
 }

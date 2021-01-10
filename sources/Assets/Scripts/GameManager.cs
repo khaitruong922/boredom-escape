@@ -15,4 +15,8 @@ public class GameManager : MonoBehaviour
     {
         OnDefeat?.Invoke();
     }
+    private void OnDestroy()
+    {
+        player.Health.OnDead -= Defeat;
+    }
 }

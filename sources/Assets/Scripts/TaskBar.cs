@@ -30,4 +30,10 @@ public class TaskBar : MonoBehaviour
         taskText.text = task.title;
         barContainer.SetActive(true);
     }
+    private void OnDestroy()
+    {
+        TaskGiver.OnTaskStart -= ShowBar;
+        TaskGiver.OnTaskEnd -= HideBar;
+        TaskGiver.OnTaskProgress -= UpdateTaskBar;
+    }
 }

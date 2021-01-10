@@ -6,13 +6,16 @@ public class TimerView : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI timerText;
-    private float timeElapsed = 0f;
+    public static float timeElapsed = 0f;
+    private void Start() {
+        timeElapsed = 0f;
+    }
     private void Update()
     {
         timeElapsed += Time.deltaTime;
         timerText.text = GetMinSecString();
     }
-    private string GetMinSecString()
+    public static string GetMinSecString()
     {
         int minutes = (int)(timeElapsed / 60);
         int seconds = (int)(timeElapsed % 60);

@@ -23,5 +23,9 @@ public class EnergyBar : MonoBehaviour
         energyBar.fillAmount = energy.Percentage;
 
     }
+    private void OnDestroy()
+    {
+        energy.OnEnergyChanged -= UpdateEnergyBar;
+    }
 }
 
