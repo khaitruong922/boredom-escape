@@ -112,7 +112,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6797382781609056530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +230,7 @@ Animator:
   m_GameObject: {fileID: 6797382781609056541}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 11a54e4429a43064c81f55c52aca3d54, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -15,6 +15,8 @@ public class ScoreView : MonoBehaviour
         Score score = Player.Instance.GetComponent<Score>();
         score.OnScoreChanged += UpdateScore;
         score.OnHighScoreChanged += UpdateHighScore;
+        UpdateScore(score.MyScore);
+        UpdateHighScore(score.HighScore);
     }
 
     private void UpdateHighScore(int score)

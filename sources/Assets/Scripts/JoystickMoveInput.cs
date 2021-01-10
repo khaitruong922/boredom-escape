@@ -6,6 +6,7 @@ public class JoystickMoveInput : MonoBehaviour
 {
     [SerializeField]
     private Joystick joystick;
+    public Joystick Joystick => joystick;
     private MoveComponent moveComponent;
     private void Awake()
     {
