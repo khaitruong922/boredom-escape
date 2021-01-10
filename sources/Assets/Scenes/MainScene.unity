@@ -355,6 +355,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TaskLocation
       objectReference: {fileID: 0}
+    - target: {fileID: 8272602346830309537, guid: 40a8250c04e99794ebf8bd0fccc71271, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272602347664670382, guid: 40a8250c04e99794ebf8bd0fccc71271, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40a8250c04e99794ebf8bd0fccc71271, type: 3}
 --- !u!1001 &1060255673
@@ -734,7 +742,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1792792337392218513, guid: df8d259f35a4b0d4abe760a61678b4a8, type: 3}
       propertyPath: orthographic size
-      value: 4.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1792792337392218515, guid: df8d259f35a4b0d4abe760a61678b4a8, type: 3}
       propertyPath: m_Name
@@ -754,7 +762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1792792337392218518, guid: df8d259f35a4b0d4abe760a61678b4a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1792792337392218518, guid: df8d259f35a4b0d4abe760a61678b4a8, type: 3}
       propertyPath: m_LocalRotation.w

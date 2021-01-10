@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxEnergy: 100
-  drainRate: 2
+  drainRate: 1
 --- !u!114 &931147723978104337
 MonoBehaviour:
   m_ObjectHideFlags: 0
