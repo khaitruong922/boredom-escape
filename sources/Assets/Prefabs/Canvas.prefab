@@ -206,8 +206,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291952895
-  m_fontColor: {r: 1, g: 0, b: 0.8227806, a: 1}
+    rgba: 4286832127
+  m_fontColor: {r: 1, g: 0.8666667, b: 0.5137255, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2944,7 +2944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4515146782996189219, guid: bab6b09b3e55b894b8a5418a4dbf1c14, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4515146782996189219, guid: bab6b09b3e55b894b8a5418a4dbf1c14, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2997,6 +2997,10 @@ PrefabInstance:
     - target: {fileID: 4515146782996189220, guid: bab6b09b3e55b894b8a5418a4dbf1c14, type: 3}
       propertyPath: m_Name
       value: TaskBarBorder
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515146782996189220, guid: bab6b09b3e55b894b8a5418a4dbf1c14, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bab6b09b3e55b894b8a5418a4dbf1c14, type: 3}
