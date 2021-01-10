@@ -78,7 +78,7 @@ public class TaskGiver : MonoBehaviour
     private void TickCooldown()
     {
         cooldownLeft -= Time.deltaTime;
-        OnTaskCooldown?.Invoke(1 - cooldownLeft / task.cooldown);
+        OnTaskCooldown?.Invoke(cooldownLeft / task.cooldown);
         if (cooldownLeft <= 0)
         {
             taskState = TaskState.Ready;
