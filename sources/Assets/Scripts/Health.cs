@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
 {
     public Action OnHealthChanged = delegate { };
     public Action OnDead = delegate { };
+    private bool isDead;
     [SerializeField]
     private float maxHP = 100;
     [SerializeField]
@@ -21,7 +22,12 @@ public class Health : MonoBehaviour
         ModifyHP(-drainRate * Time.deltaTime);
         if (currentHP <= 0)
         {
-            Die();
+            if (!isDead)
+            {
+
+                Die();
+                isDead = true;
+            }
         }
     }
     public void ModifyHP(float amount)
@@ -40,7 +46,5 @@ public class Health : MonoBehaviour
     }
     public float Percentage => currentHP / maxHP;
     public bool IsFull => currentHP == maxHP;
-    public bool IsDead => currentHP == 0;
-
 }
 
