@@ -19,11 +19,11 @@ public class ScoreView : MonoBehaviour
 
     private void UpdateHighScore(int score)
     {
-        highScoreText.text = string.Format("Best: {0}", score);
+        highScoreText.text = score.ToString();
     }
 
     private void UpdateScore(int score)
     {
-        scoreText.text = string.Format("Score: {0}", score);
+        scoreText.text = score.ToString();
     }
 }
