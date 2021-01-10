@@ -19,4 +19,4 @@ MonoBehaviour:
   duration: 5
   energy: -15
   health: -15
-  score: 10
+  score: 100

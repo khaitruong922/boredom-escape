@@ -19,5 +19,4 @@ MonoBehaviour:
   duration: 5
   energy: -10
   health: 5
-  point: 100
-  finished: All tidy and clean!
+  score: 100
