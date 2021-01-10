@@ -2505,6 +2505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefeatScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 2046338433664820778, guid: 346ad75bf3dd6fc419d0310ade3e6f94, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5206353017671974496, guid: 346ad75bf3dd6fc419d0310ade3e6f94, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
