@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Turn on your PC?
   description: All these chores are so tiring. Let's take some time off and enjoy
     yourself !
-  cooldown: 20
+  cooldown: 30
   duration: 7
   energy: -10
   health: 25

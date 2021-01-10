@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Water the tulips
   description: Your plants are dying from thirst. Maybe give them some water?
-  cooldown: 10
+  cooldown: 20
   duration: 3
   energy: 10
   health: 10
