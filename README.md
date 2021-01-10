@@ -11,8 +11,8 @@ Game's name: Boredom Escape
 Contributors:
 
 - Truong Duc Khai (khaitruong922)
-- Vo Thanh Thong 
-- Pham Thanh Nam
+- Vo Thanh Thong (vothanhthong)
+- Pham Thanh Nam (AshtonPh)
 - Bui Vu Thien An
 
 Art sources:
