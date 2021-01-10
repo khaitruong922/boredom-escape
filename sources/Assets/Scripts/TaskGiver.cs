@@ -8,6 +8,7 @@ public enum TaskState
     InProgress,
     OnCooldown
 }
+[RequireComponent(typeof(AudioSource))]
 public class TaskGiver : MonoBehaviour
 {
     public static Action<Task> OnTaskStart { get; set; }
@@ -15,6 +16,7 @@ public class TaskGiver : MonoBehaviour
     public Action<float> OnTaskCooldown { get; set; }
     public static Action OnTaskEnd { get; set; }
     public static Action<Task> OnTaskFinished { get; set; }
+    private AudioSource audioSource;
     [SerializeField]
     private Task task;
     public Task Task => task;
@@ -25,6 +27,7 @@ public class TaskGiver : MonoBehaviour
     private void Start()
     {
         taskReceiver = Player.Instance.GetComponent<TaskReceiver>();
+        audioSource = GetComponent<AudioSource>();
         ResetTask();
     }
     private void Update()
@@ -72,6 +75,7 @@ public class TaskGiver : MonoBehaviour
             // Give reward
             OnTaskFinished?.Invoke(task);
             OnTaskEnd?.Invoke();
+            audioSource.Play();
             taskState = TaskState.OnCooldown;
         }
     }
