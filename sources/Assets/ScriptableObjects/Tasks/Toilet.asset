@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Use the bathroom
   description: Take a leak?
-  cooldown: 35
-  duration: 5
-  energy: 20
+  cooldown: 40
+  duration: 3
+  energy: 15
   health: 15
   score: 0

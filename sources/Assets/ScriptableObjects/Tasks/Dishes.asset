@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Your dishes are so dirty and messy. Be responsible and clean them
     up!
   cooldown: 30
-  duration: 5
+  duration: 3
   energy: -6
   health: 15
   score: 100
