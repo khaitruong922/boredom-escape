@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Read a book
   description: Let's pick up where we left off from last time.
   cooldown: 20
-  duration: 10
-  energy: 20
-  health: 10
+  duration: 5
+  energy: -5
+  health: 20
   score: 150
