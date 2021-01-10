@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Water the tulips
   description: Your plants are dying from thirst. Maybe give them some water?
   cooldown: 10
-  duration: 6
-  energy: -10
+  duration: 3
+  energy: 10
   health: 10
   score: 100
