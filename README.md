@@ -1,33 +1,38 @@
+# Boredom Escape
+
 This is the game that we made for Gameloft Game Jam 2020 in 48 hours
 
-Platform: Android
+## Platform
 
-Theme: Life at Home
+Android
 
-Team: RDC Circus
+## Theme
 
-Game's name: Boredom Escape
+Life at Home
 
-Download link: https://drive.google.com/file/d/1JSQxdHxiQwoYimSyFG2ISd9sHSw7CgQv/view?usp=sharing
+## Team
 
+RDC Circus
 
-Contributors:
+## Contributors:
 
 - Truong Duc Khai (khaitruong922)
 - Vo Thanh Thong (vothanhthong)
 - Pham Thanh Nam (AshtonPh)
 - Bui Vu Thien An
 
-Art sources:
+## Art sources:
 
-Icon: www.flaticon.com
+- Icon: www.flaticon.com
+- Tilemap: https://tilation.itch.io/
+- Character, Game Icon, Menu Background: Bui Vu Thien An
+- Font: https://usemodify.com/
 
-Tilemap: https://tilation.itch.io/
+## Music & Sound sources:
 
-Character, Game Icon, Menu Background: Bui Vu Thien An
+- Music by Eric Matyas www.soundimage.org
+- Sound effect: https://mixkit.co/free-sound-effects/game/
 
-Font: https://usemodify.com/
+## Download link 
+https://drive.google.com/file/d/1JSQxdHxiQwoYimSyFG2ISd9sHSw7CgQv/view?usp=sharing
 
-Music & Sound sources:
-
-Music by Eric Matyas www.soundimage.org
