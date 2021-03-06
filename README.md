@@ -14,13 +14,20 @@ Life at Home
 
 RDC Circus
 
-## Contributors:
+## Contributors
 
 - Truong Duc Khai (khaitruong922)
 - Vo Thanh Thong (vothanhthong)
 - Pham Thanh Nam (AshtonPh)
 - Bui Vu Thien An
 
+## Preview
+
+![Task](Screenshots/task.png)
+
+![Doing task](Screenshots/doingtask.png)
+
+[Gameplay Video](https://drive.google.com/file/d/1t9Oq6gok6RMx2kyvPcIqr5C2usO_ASEa/view?usp=sharing)
 ## Art sources
 
 - Icon: www.flaticon.com
