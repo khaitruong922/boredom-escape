@@ -31,6 +31,8 @@ The more energy you have, the faster you run.
 
 Run around the house and finish task to maintain your happiness.
 
+Get as much score as possible while you are still alive.
+
 ## Preview
 
 ![Task](Screenshots/task.png)
