@@ -21,6 +21,16 @@ RDC Circus
 - Pham Thanh Nam (AshtonPh)
 - Bui Vu Thien An
 
+## How to play?
+
+Your happiness and energy will drain over time.
+
+If your happiness reaches zero, you will lose.
+
+The more energy you have, the faster you run.
+
+Run around the house and finish task to maintain your happiness.
+
 ## Preview
 
 ![Task](Screenshots/task.png)
